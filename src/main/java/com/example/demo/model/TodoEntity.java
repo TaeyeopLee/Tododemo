@@ -18,11 +18,11 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Table(name = "Todo")
 public class TodoEntity {
-    @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name="system-uuid", strategy="uuid")
-    private String id;
-    private String userId;
-    private String title;
-    private boolean done;
+	@Id
+	@GeneratedValue(generator="system-uuid")
+	@GenericGenerator(name="system-uuid", strategy = "uuid")
+	private String id;
+	private String userId;
+	private String title;
+	private boolean done;
 }
